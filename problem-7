@@ -1,0 +1,24 @@
+/* Write a C program to display multiple variables.
+Sample Variables : 
+a+c, x + c, dx + x, ((int)dx) + ax, a + x, s + b, ax + b, s + c, ax + c, ax + ux*/
+#include<stdio.h>
+int main()
+{
+    int a = 125, b = 12345;
+    long ax = 1234567890;
+    short s = 4043;
+    float x = 2.13459;
+    double dx = 1.1415927;
+    char c = 'W';
+    unsigned long ux = 2541567890;
+    printf("A+C=%d\n",a+c);
+    printf("X+C=%f\n",x+c);
+    printf("DX+X=%lf\n",dx+x);
+    printf("DX+AX=%d\n",((int)dx) + ax);
+    printf("A+X=%f\n",a+x);
+    printf("S+B=%d\n",s+b);
+    printf("AX+B=%d\n",ax+b);
+    printf("S+C=%d\n",s+c);
+    return 0;
+    
+}

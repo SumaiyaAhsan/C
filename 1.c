@@ -1,32 +1,19 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int n1,n2,n3;
-    scanf("%d%d%d",&n1,&n2,&n3);
-    if(n1>n2)
+    int x=1, y=2, z=3;
+    if (scanf("%d%d", &x, &y))
     {
-         if(n1>n3)
-         {
-           printf("Large number:%d",n1);
-         }
+        printf("%d", x + y);
     }
-    if(n2>n1)
+    else if (scanf("%d%d", &y, &z))
     {
-        if(n2>n3)
-        {
-            printf("Large number:%d",n2);
-        }
+        printf("%d", z - y);
     }
-    if(n3>n1)
+    else
     {
-        if(n3>n2)
-        {
-            printf("Large number:%d",n3);
-        }
+        int y=(x+z)/2;
+        printf("%d", z);
     }
-    else{
-        printf("Equal");
-    }
-
     return 0;
 }
